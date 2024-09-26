@@ -1,4 +1,3 @@
-make
-sudo make install
-make clean
-sudo make clean-all
+aclocal && autoconf && touch AUTHORS NEWS README ChangeLog && automake --add-missing 
+./configure && make && make install
+./helloworld
